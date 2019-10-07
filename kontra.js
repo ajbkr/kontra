@@ -3645,6 +3645,9 @@ function TileEngine(properties = {}) {
         this._d = true;
         layerMap[name].data = data;
       }
+      if (layerCanvases[name]) {
+        delete layerCanvases[name];
+      }
     },
 
 
